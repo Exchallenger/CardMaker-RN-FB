@@ -9,10 +9,10 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path={['/','login']} exact>
-          
+          <Login></Login>
         </Route>
         <Route path='/main'>
-       
+          <Main></Main>
         </Route>
       </Switch>
     </BrowserRouter>);
