@@ -1,0 +1,61 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 50%;
+  background-color: beige;
+  margin: auto;
+  padding: 12px 24px;
+  text-align: center;
+}
+
+.nav {
+  background-color: skyblue;
+  padding: 12px 12px;
+  margin: auto;
+  text-align: center;
+}
+
+.img {
+  margin-top: 1rem;
+}
+
+.main {
+  background-color: grey;
+}
+
+.h1 {
+  font-size: 50px;
+  padding: 12px 24px;
+}
+
+.ul {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 12px 24px;
+}
+
+.gobtn,
+.gibtn {
+  font-size: 1.3em;
+  height: 2rem;
+  background-color: transparent;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 300ms ease-in;
+}
+
+.gobtn:hover,
+.gibtn:hover {
+  transform: scale(1.1);
+}
+
+.footer {
+  background-color: skyblue;
+  margin: auto;
+  text-align: center;
+}

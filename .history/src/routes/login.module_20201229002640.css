@@ -1,0 +1,11 @@
+.section {
+  background-color: beige;
+}
+
+.gobtn,
+.gibtn {
+  list-style: none;
+  background-color: transparent;
+  outline: none;
+  border-radius: 12px;
+}

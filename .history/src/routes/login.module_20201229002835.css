@@ -1,0 +1,17 @@
+.section {
+  background-color: beige;
+  margin: auto;
+  padding: 12px 24px;
+}
+
+.ul {
+  list-style: none;
+}
+
+.gobtn,
+.gibtn {
+  background-color: transparent;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
