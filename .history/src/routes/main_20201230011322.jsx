@@ -24,8 +24,8 @@ const Main = (props) => {
                 <button className={styles.btn} onClick={onLogOut}>Log out</button>
             </div>
             <section className={styles.main}>
-                <Editor/>
                 <Preview/>
+                <Editor/>
             </section>
             <footer className={styles.footer}>
                 &copy; Exchallenger 2020.12

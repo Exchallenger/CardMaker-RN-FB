@@ -1,5 +1,3 @@
-import Editor from 'components/editor/editor';
-import Preview from 'components/preview/preview';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { firebaseInstance } from 'service/firebase';
@@ -18,14 +16,13 @@ const Main = (props) => {
 
     return(
         <section className={styles.all}>
+            <button className={styles.btn} onClick={onLogOut}>Log out</button>
             <div className={styles.header}>
                 <img className={styles.img} src={imgfile} alt="logo"/>
-                <span className={styles.title}>Business Card Maker</span>
-                <button className={styles.btn} onClick={onLogOut}>Log out</button>
+                <div className={styles.title}>Business Card Maker</div>
             </div>
             <section className={styles.main}>
-                <Editor/>
-                <Preview/>
+                Halo
             </section>
             <footer className={styles.footer}>
                 &copy; Exchallenger 2020.12

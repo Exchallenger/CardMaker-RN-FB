@@ -1,38 +1,30 @@
 .all {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .header {
-  position: relative;
-  padding: 12px 12px;
   background-color: skyblue;
-  width: 100%;
 }
 .footer {
   background-color: skyblue;
-  width: 100%;
-  text-align: end;
-  padding: 4px 12px;
 }
 
 .img {
-  box-sizing: content-box;
-  height: 1.5em;
-  margin: 2px 1em;
+  font-size: 2em;
+  margin: 0.5em 1em;
+  line-height: 2em;
 }
 
 .title {
   font-size: 2em;
   margin: 0 1em;
-  line-height: 1.2em;
+  line-height: 2em;
 }
 
 .btn {
   position: absolute;
-  top: 1.4em;
+  top: 1.5em;
   right: 1.5em;
   background-color: transparent;
   outline: none;
@@ -45,17 +37,4 @@
 
 .btn:hover {
   transform: scale(1.1);
-}
-
-.main {
-  width: 100%;
-  height: 100%;
-  flex: 1;
-  display: flex;
-}
-
-@media screen and (max-width: 55rem) {
-  .main {
-    flex-direction: column;
-  }
 }

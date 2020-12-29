@@ -19,13 +19,13 @@ const Main = (props) => {
     return(
         <section className={styles.all}>
             <div className={styles.header}>
+            <button className={styles.btn} onClick={onLogOut}>Log out</button>
                 <img className={styles.img} src={imgfile} alt="logo"/>
                 <span className={styles.title}>Business Card Maker</span>
-                <button className={styles.btn} onClick={onLogOut}>Log out</button>
             </div>
             <section className={styles.main}>
-                <Editor/>
                 <Preview/>
+                <Editor/>
             </section>
             <footer className={styles.footer}>
                 &copy; Exchallenger 2020.12

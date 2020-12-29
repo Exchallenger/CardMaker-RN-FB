@@ -31,8 +31,8 @@
 }
 
 .btn {
-  position: absolute;
-  top: 1.4em;
+  position: relative;
+  top: 1.5em;
   right: 1.5em;
   background-color: transparent;
   outline: none;
@@ -48,14 +48,6 @@
 }
 
 .main {
-  width: 100%;
-  height: 100%;
   flex: 1;
   display: flex;
-}
-
-@media screen and (max-width: 55rem) {
-  .main {
-    flex-direction: column;
-  }
 }
