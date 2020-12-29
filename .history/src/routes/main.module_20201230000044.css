@@ -1,0 +1,23 @@
+.all {
+  display: inline-block;
+}
+
+.header {
+  width: 100%;
+  background-color: skyblue;
+  display: flex;
+}
+.footer {
+  width: 100%;
+  background-color: skyblue;
+}
+
+.img {
+  width: 3em;
+}
+
+.btn {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+}

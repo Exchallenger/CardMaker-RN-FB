@@ -1,0 +1,7 @@
+.all {
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+}

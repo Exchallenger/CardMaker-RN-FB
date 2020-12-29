@@ -1,0 +1,13 @@
+.all {
+  display: inline-block;
+}
+
+.header {
+  display: flex;
+  position: absolute;
+  top: 0;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+}

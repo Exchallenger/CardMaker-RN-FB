@@ -4,13 +4,14 @@ import Login from './routes/login';
 import Main from './routes/main';
 
 const AppRouter = (props) => {
+    const [login, setLogin] = useState(true);
     return(
     <Router>
         <Switch>
             <Route exact path="/">
-                <Login/>
+                <Login login={login}/>
             </Route>
-            <Route exact path="/main">
+            <Route exact path="home">
                 <Main/>
             </Route>
         </Switch>

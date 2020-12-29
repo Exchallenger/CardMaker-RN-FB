@@ -27,7 +27,7 @@ const Login = ({login}) => {
     }
      const onAuthChange = () =>{
          firebaseInstance.auth().onAuthStateChanged(user =>{
-             user && goMain();
+             user && goMain(user);
          })
      }
     useEffect(()=>{

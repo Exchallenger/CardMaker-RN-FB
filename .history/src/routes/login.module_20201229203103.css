@@ -25,7 +25,7 @@
 }
 
 .title {
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .img {
@@ -55,8 +55,7 @@
 }
 
 .gobtn,
-.gibtn,
-.logout {
+.gibtn {
   font-size: 1.3em;
   height: 2rem;
   background-color: transparent;

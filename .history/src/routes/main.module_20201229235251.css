@@ -1,0 +1,22 @@
+.all {
+  display: inline-block;
+}
+
+.header {
+  width: 100%;
+  background-color: skyblue;
+  display: flex;
+  /* position: absolute;
+  top: 1em; */
+}
+.footer {
+  width: 100%;
+  background-color: skyblue;
+  position: absolute;
+  bottom: 1em;
+  right: 2em;
+}
+
+.img {
+  width: 3em;
+}

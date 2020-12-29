@@ -9,7 +9,7 @@ const Main = (props) => {
     const onLogOut = () =>{
         firebaseInstance.auth().signOut();
         history.push({
-            pathname:"/"
+            pathname="/"
         })
 
     }

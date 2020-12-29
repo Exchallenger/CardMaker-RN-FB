@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { authService, firebaseInstance } from '../service/firebase';
 import styles from "./login.module.css";
 import imgfile from "../img/logo.png"
@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 
 
 const Login = ({login}) => {
+    const [uid,setUid] = useState("");
     const history = useHistory();
 
     const onLogin = async(event) =>{
@@ -20,19 +21,15 @@ const Login = ({login}) => {
         .then(data => goMain(data.user.uid));     
     }
     const goMain= (data) => {
-        history.push({
+        setUid(data);
+        data && history.push({
             pathname:"/main",
             state:{id : data}
         });
+        if (uid===""){
+            alert("계정이 없거나 잘못 되었습니다. 다시 시도하세요");
     }
-     const onAuthChange = () =>{
-         firebaseInstance.auth().onAuthStateChanged(user =>{
-             user && goMain();
-         })
-     }
-    useEffect(()=>{
-        onAuthChange();
-    })
+    }
 
     return(
         <section className={styles.section}>

@@ -24,10 +24,6 @@
   text-align: center;
 }
 
-.title {
-  font-size: 30px;
-}
-
 .img {
   margin-top: 1rem;
 }
@@ -42,7 +38,7 @@
 }
 
 .h1 {
-  font-size: 25px;
+  font-size: 20px;
   padding: 12px 24px;
 }
 
@@ -55,8 +51,7 @@
 }
 
 .gobtn,
-.gibtn,
-.logout {
+.gibtn {
   font-size: 1.3em;
   height: 2rem;
   background-color: transparent;

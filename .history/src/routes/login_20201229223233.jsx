@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { authService, firebaseInstance } from '../service/firebase';
 import styles from "./login.module.css";
 import imgfile from "../img/logo.png"
@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 
 
 const Login = ({login}) => {
+    const [uid,setUid] = useState("");
     const history = useHistory();
 
     const onLogin = async(event) =>{
@@ -17,22 +18,15 @@ const Login = ({login}) => {
             provider = new firebaseInstance.auth.GithubAuthProvider();
         }
         await authService.signInWithPopup(provider)
-        .then(data => goMain(data.user.uid));     
+        .then(data => goMain(data));     
     }
     const goMain= (data) => {
-        history.push({
+        setUid(data.user.uid);
+        uid && history.push({
             pathname:"/main",
-            state:{id : data}
+            state:{id : data.user.id}
         });
     }
-     const onAuthChange = () =>{
-         firebaseInstance.auth().onAuthStateChanged(user =>{
-             user && goMain();
-         })
-     }
-    useEffect(()=>{
-        onAuthChange();
-    })
 
     return(
         <section className={styles.section}>

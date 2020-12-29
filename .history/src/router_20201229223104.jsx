@@ -4,6 +4,7 @@ import Login from './routes/login';
 import Main from './routes/main';
 
 const AppRouter = (props) => {
+    const [login, setLogin] = useState(false);
     return(
     <Router>
         <Switch>

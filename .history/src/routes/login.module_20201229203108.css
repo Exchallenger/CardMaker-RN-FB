@@ -55,8 +55,7 @@
 }
 
 .gobtn,
-.gibtn,
-.logout {
+.gibtn {
   font-size: 1.3em;
   height: 2rem;
   background-color: transparent;

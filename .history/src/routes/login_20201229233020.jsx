@@ -20,14 +20,14 @@ const Login = ({login}) => {
         .then(data => goMain(data.user.uid));     
     }
     const goMain= (data) => {
-        history.push({
+        data && history.push({
             pathname:"/main",
             state:{id : data}
         });
     }
      const onAuthChange = () =>{
          firebaseInstance.auth().onAuthStateChanged(user =>{
-             user && goMain();
+             user && goMain(user);
          })
      }
     useEffect(()=>{

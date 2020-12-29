@@ -1,12 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { authService, firebaseInstance } from '../service/firebase';
 import styles from "./login.module.css";
 import imgfile from "../img/logo.png"
-import { useHistory } from 'react-router-dom';
 
 
 const Login = ({login}) => {
-    const history = useHistory();
+
 
     const onLogin = async(event) =>{
         let provider;
@@ -17,23 +16,9 @@ const Login = ({login}) => {
             provider = new firebaseInstance.auth.GithubAuthProvider();
         }
         await authService.signInWithPopup(provider)
-        .then(data => goMain(data.user.uid));     
+        .then
+        
     }
-    const goMain= (data) => {
-        history.push({
-            pathname:"/main",
-            state:{id : data}
-        });
-    }
-     const onAuthChange = () =>{
-         firebaseInstance.auth().onAuthStateChanged(user =>{
-             user && goMain();
-         })
-     }
-    useEffect(()=>{
-        onAuthChange();
-    })
-
     return(
         <section className={styles.section}>
             <div className={styles.nav}>
@@ -51,6 +36,7 @@ const Login = ({login}) => {
                         <button className={styles.gibtn} onClick={onLogin} name="github">Github</button>
                     </li>
                 </ul></> }
+
             </div>
             <div className={styles.footer}>&copy; Exchallenger</div>
         </section>

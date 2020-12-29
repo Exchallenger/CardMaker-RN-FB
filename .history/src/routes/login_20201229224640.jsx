@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { authService, firebaseInstance } from '../service/firebase';
 import styles from "./login.module.css";
 import imgfile from "../img/logo.png"
@@ -20,19 +20,11 @@ const Login = ({login}) => {
         .then(data => goMain(data.user.uid));     
     }
     const goMain= (data) => {
-        history.push({
+        data && history.push({
             pathname:"/main",
             state:{id : data}
         });
     }
-     const onAuthChange = () =>{
-         firebaseInstance.auth().onAuthStateChanged(user =>{
-             user && goMain();
-         })
-     }
-    useEffect(()=>{
-        onAuthChange();
-    })
 
     return(
         <section className={styles.section}>

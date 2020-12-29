@@ -1,31 +1,20 @@
-* {
-  box-sizing: border-box;
-  margin: auto;
-}
-
 .section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
   width: 50%;
   margin: auto;
+  padding: 12px 24px;
   text-align: center;
-  border-radius: 12px;
-  border: 3px solid black;
 }
 
 .nav {
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
   width: 100%;
   background-color: skyblue;
   padding: 12px 12px;
   margin: auto;
   text-align: center;
-}
-
-.title {
-  font-size: 30px;
 }
 
 .img {
@@ -35,14 +24,12 @@
 .main {
   padding: 12px 12px;
   width: 100%;
-  background-color: skyblue;
-  border-top: 3px solid black;
-  border-bottom: 3px solid black;
+  background-color: grey;
   margin: 0;
 }
 
 .h1 {
-  font-size: 25px;
+  font-size: 50px;
   padding: 12px 24px;
 }
 
@@ -55,13 +42,11 @@
 }
 
 .gobtn,
-.gibtn,
-.logout {
+.gibtn {
   font-size: 1.3em;
   height: 2rem;
   background-color: transparent;
   outline: none;
-  border: 2px solid black;
   border-radius: 12px;
   cursor: pointer;
   transition: all 300ms ease-in;
@@ -70,17 +55,11 @@
 .gobtn:hover,
 .gibtn:hover {
   transform: scale(1.1);
-  color: white;
-  background-color: black;
-  border: 2px solid white;
 }
 
 .footer {
   width: 100%;
-  padding: 12px 12px;
   background-color: skyblue;
   margin: auto;
   text-align: center;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
 }
