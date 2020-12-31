@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+}
+
+.imgdiv {
+  flex-basis: 30%;
+}
+.img {
+}
+.main {
+}
+.name {
+}
+.company {
+}
+.job {
+}
+.email {
+}
+.content {
+}
