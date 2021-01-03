@@ -1,0 +1,6 @@
+            {preview.map(pre => 
+                <CardPre
+                key ={pre.key}
+                data={data}
+                pre={pre}
+                />)}
