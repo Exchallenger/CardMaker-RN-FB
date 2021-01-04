@@ -36,7 +36,7 @@ const CardAddForm = ({ FileInput,onAdd }) => {
       fileURL: file.URL || '',
     };
     formRef.current.reset();
-    setFile({fileName:null, fileURL: null});
+    console.log(card);
     onAdd(card);
   };
   return (

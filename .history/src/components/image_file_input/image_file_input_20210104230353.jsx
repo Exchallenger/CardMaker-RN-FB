@@ -3,19 +3,13 @@ import styles from './image_file_input.module.css';
 
 const ImageFileInput = ({imageUploader,name, onFileChange}) =>{
     const inputRef = useRef();
-    const onButtonClick = (event) =>{
+    const onButtonClick = () =>{
         event.preventDefault();
         inputRef.current.click();
     };
-    const onChange = async event =>{
+    const onChange = (event) =>{
         
         console.log(event.target.files[0]);
-        const uploaded= await imageUploader.upload(event.target.files[0])
-        console.log(uploaded);
-        onFileChange({
-            name:uploaded.original_filename,
-            url:uploaded.url
-        })
     }
 
     return(
