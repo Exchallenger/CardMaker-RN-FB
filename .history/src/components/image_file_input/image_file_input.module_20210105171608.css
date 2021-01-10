@@ -15,18 +15,12 @@
 .button {
   width: 100%;
   height: 2.4em;
+  background-color: makerLightGrey;
   font-weight: bold;
   cursor: pointer;
   border: 0;
   outline: none;
   font-size: 0.8rem;
-}
-
-.button.grey {
-  background-color: grey;
-}
-.button.pink {
-  background-color: pink;
 }
 
 .button:hover {
@@ -37,8 +31,8 @@
   width: 1.8em;
   height: 1.8em;
   border-radius: 50%;
-  border: 3px solid grey;
-  border-top: 3px solid pink;
+  border: 2px solid grey;
+  border-top: 2px solid pink;
   animation: spin 2s linear infinite;
 }
 
